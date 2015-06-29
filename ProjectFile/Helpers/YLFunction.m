@@ -8,7 +8,7 @@
 
 #import "YLFunction.h"
 #import "RegexKitLite.h"
-#import "UIImage+Extention.h"
+#import "UIImage+Extend.h"
 #include <sys/types.h>
 #include <sys/sysctl.h>
 #import "CoreArchive.h"

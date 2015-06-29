@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>038861B1-1504-410F-8FF3-3A5D68BCDB77</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ProjectFile</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>03C9A2ECCEE4C88C43AB3141F1D5DB185B7DFBFF</key>
+		<string>https://github.com/Fexerlear/ProjectFile.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ProjectFile.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>03C9A2ECCEE4C88C43AB3141F1D5DB185B7DFBFF</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Fexerlear/ProjectFile.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>03C9A2ECCEE4C88C43AB3141F1D5DB185B7DFBFF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>03C9A2ECCEE4C88C43AB3141F1D5DB185B7DFBFF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ProjectFile</string>
+		</dict>
+	</array>
+</dict>
+</plist>

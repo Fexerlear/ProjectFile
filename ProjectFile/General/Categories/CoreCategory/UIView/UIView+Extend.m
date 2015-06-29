@@ -7,6 +7,7 @@
 //
 
 #import "UIView+Extend.h"
+#import "Masonry.h"
 
 
 
@@ -117,6 +118,29 @@
     return self.frame.origin.y;
 }
 
+- (void)setCenterX:(CGFloat)centerX
+{
+    CGPoint center = self.center;
+    center.x = centerX;
+    self.center = center;
+}
+
+- (CGFloat)centerX
+{
+    return self.center.x;
+}
+
+- (void)setCenterY:(CGFloat)centerY
+{
+    CGPoint center = self.center;
+    center.y = centerY;
+    self.center = center;
+}
+
+- (CGFloat)centerY
+{
+    return self.center.y;
+}
 - (void)setWidth:(CGFloat)width
 {
     CGRect frame = self.frame;
@@ -244,6 +268,18 @@
 }
 
 
+/**
+ *  视图添加约束，使之和父控件一样大
+ *
+ *  @param insets insets
+ */
+-(void)masViewAddConstraintMakeEqualSuperViewWithInsets:(UIEdgeInsets)insets{
+    
+    [self mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.edges.equalTo(self.superview).with.insets(insets);
+    }];
+}
 
 
 

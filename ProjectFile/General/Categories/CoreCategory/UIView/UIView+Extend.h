@@ -38,6 +38,20 @@ typedef enum{
 @property (nonatomic,assign) CGFloat radius;
 
 
+@property (nonatomic, assign) CGFloat centerX;
+@property (nonatomic, assign) CGFloat centerY;
+
+
+
+
+/**
+ *  视图添加约束，使之和父控件一样大
+ *
+ *  @param insets insets
+ */
+-(void)masViewAddConstraintMakeEqualSuperViewWithInsets:(UIEdgeInsets)insets;
+
+
 
 
 /**
