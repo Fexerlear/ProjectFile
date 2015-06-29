@@ -1,0 +1,66 @@
+//
+//  PrefixHeader.pch
+//  ProjectFile
+//
+//  Created by hh on 15/6/26.
+//  Copyright (c) 2015年 Fexerlear. All rights reserved.
+//
+
+#ifndef _____PrefixHeader_pch
+#define _____PrefixHeader_pch
+
+#endif
+
+// 定义不同的模式下的输出函数
+#ifdef DEBUG
+#ifndef DLog
+#   define DLog(fmt, ...) {NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
+#endif
+#ifndef ELog
+#   define ELog(err) {if(err) DLog(@"%@", err)}
+#endif
+#else
+#ifndef DLog
+#   define DLog(...)
+#endif
+#ifndef ELog
+#   define ELog(err)
+#endif
+#endif
+
+
+
+// 引入第三方头文件
+//#import <AFNetworking.h>
+//#import "MBProgressHUD+YL.h"
+//#import <MJRefresh.h>
+//#import <MJExtension.h>
+//#import <UIImageView+WebCache.h>
+//#import <RegexKitLite.h>
+//#import <Reachability.h>
+//#import <ZBarSDK.h>
+//#import <MMDrawerController.h>
+//#import <FMDB.h>
+
+
+// 引入自定义头文件
+#import "YLFunction.h"
+
+
+// 自定义宏文件
+#import "URLsMacro.h"
+#import "VendorMacro.h"
+#import "UtilsMacro.h"
+#import "NotificationMacro.h"
+
+
+
+
+
+// 代替开启僵尸模式的代码
+//#ifdef _FOR_DEBUG_
+//-(BOOL) respondsToSelector:(SEL)aSelector {
+//    printf("SELECTOR: %s\n", [NSStringFromSelector(aSelector) UTF8String]);
+//    return [super respondsToSelector:aSelector];
+//}
+//#endif
