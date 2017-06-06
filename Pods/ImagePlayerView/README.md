@@ -1,12 +1,13 @@
 ImagePlayerView
 ===============
 
-* Show a group of images in view
-* Support Auto Layout
-* UIPageControl, remove option
+* show a group of images in view
+* base on AutoLayout
+* custom UIPageControl position
+* support infinity scroll
 
 ##Show
-![image](https://github.com/interchen/ImagePlayerView/blob/master/ImageViewPlayer.gif)
+![image](https://github.com/interchen/ImagePlayerView/blob/master/endless.gif)
 
 ##Installation with CocoaPods
 ```objective-c
@@ -37,6 +38,18 @@ self.imageURLs = @[[NSURL URLWithString:@"http://sudasuta.com/wp-content/uploads
     imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[self.imageURLs objectAtIndex:index]]];
 }
 ```
+###important
+> clear imagePlayerView instance
+
+```objective-c
+- (void)dealloc
+{
+    // clear
+    [self.imagePlayerView stopTimer];
+    self.imagePlayerView.imagePlayerViewDelegate = nil;
+    self.imagePlayerView = nil;
+}
+```
 
 ###adjust pageControl position
 ```objective-c
@@ -51,6 +64,11 @@ self.imagePlayerView.hidePageControl = NO;
 ###adjust edgeInset
 ```objective-c
 self.imagePlayerView.edgeInsets = UIEdgeInsetsMake(10, 20, 30, 40);
+```
+
+###endless switch
+```objective-c
+self.imagePlayerView.endlessScroll = YES;
 ```
 
 ##Versions
