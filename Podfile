@@ -1,4 +1,8 @@
-pod 'AFNetworking', '~> 2.5.4' #网络请求
+
+target "ProjectFile" do
+    platform :ios, '8.0'
+
+pod 'AFNetworking', '~> 2.5 #网络请求
 pod 'MBProgressHUD', '~> 0.9.1' #提示信息
 pod 'MJRefresh', '~> 1.4.6' #刷新
 pod 'MJExtension', '~> 2.1.0' #字典数组一键转模型
@@ -19,5 +23,9 @@ pod 'FMDB', '~> 2.5'    #SQLite数据库支持
 pod 'SCNavigationController', '~> 1.0.1' #容器视图控制器
 pod 'IQKeyboardManager', '~> 3.2.4' #自动处理键盘事件
 pod 'iCarousel', '~> 1.8.1' #iCarousel是一个类，它继承于UIView。用于简化实现各种类型的旋转木马(分页滚动视图）
+
+
+end
+
 
 
