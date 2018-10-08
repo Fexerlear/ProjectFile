@@ -7,7 +7,7 @@
 //
 
 #import "UIImage+Extend.h"
-#import "CoreConst.h"
+#import "UIDevice+Extend.h"
 #import <objc/runtime.h>
 #import <Accelerate/Accelerate.h>
 

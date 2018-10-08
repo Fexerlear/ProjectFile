@@ -52,6 +52,10 @@
 #import "VendorMacro.h"
 #import "UtilsMacro.h"
 #import "NotificationMacro.h"
+#import "RectMacro.h"
+#import "FontMacro.h"
+#import "ColorMacro.h"
+#import "ENUMMacro.h"
 
 
 

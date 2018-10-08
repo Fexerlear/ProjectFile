@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "CALayer+Transition.h"
 #import "YLAdvViewController.h"
+#import <UMMobClick/MobClick.h>
+#import "FDSDImageTools.h"
 
 @interface AppDelegate ()
 
@@ -58,6 +60,29 @@
     self.window.rootViewController = vc;
     [self.window.layer transitionWithAnimType:TransitionAnimTypeRamdom subType:TransitionSubtypesFromRamdom curve:TransitionCurveRamdom duration:2.0f];
 }
+
+- (void)loadUMPara {
+    
+    UMConfigInstance.appKey = UM_AppKey;
+    UMConfigInstance.channelId = UM_channelId;
+    [MobClick startWithConfigure:UMConfigInstance];
+    [MobClick setEncryptEnabled:YES]; // 将日志信息做加密处理
+    
+#ifdef DEBUG
+    [MobClick setCrashReportEnabled:YES];
+#endif
+    
+    
+}
+
+#pragma mark - 内存处理
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
+    
+    [FDSDImageTools cancelAllDownload];
+    [FDSDImageTools clearMemoryImage];
+    
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

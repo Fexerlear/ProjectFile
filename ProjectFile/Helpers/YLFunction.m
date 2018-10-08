@@ -89,7 +89,7 @@
 +(UIImage *)screenShot
 {
     
-    UIGraphicsBeginImageContextWithOptions(CGSizeMake(kScreenW * screenScale, kScreenH * screenScale), YES, 0);
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(([UIScreen mainScreen].bounds.size.width) * screenScale, ([UIScreen mainScreen].bounds.size.height) * screenScale), YES, 0);
     //设置截屏大小
     [[[[UIApplication sharedApplication] keyWindow] layer] renderInContext:UIGraphicsGetCurrentContext()];
     
@@ -98,7 +98,7 @@
     UIGraphicsEndImageContext();
     
     CGImageRef imageRef = viewImage.CGImage;
-    CGRect rect = CGRectMake(0, 0, kScreenW * screenScale,kScreenH * screenScale);
+    CGRect rect = CGRectMake(0, 0, ([UIScreen mainScreen].bounds.size.width) * screenScale,([UIScreen mainScreen].bounds.size.height) * screenScale);
     
     CGImageRef imageRefRect =CGImageCreateWithImageInRect(imageRef, rect);
     UIImage *sendImage = [[UIImage alloc] initWithCGImage:imageRefRect];

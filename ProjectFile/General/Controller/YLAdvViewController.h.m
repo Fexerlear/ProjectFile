@@ -87,7 +87,7 @@
 #pragma mark 新版添加轮播图
 - (void)addScrollViewInView {
     
-    self.imagePlayerView=[[ImagePlayerView alloc]initWithFrame:CGRectMake(0, 0, kScreenW, kScreenH)];
+    self.imagePlayerView=[[ImagePlayerView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     
     self.imagePlayerView.imagePlayerViewDelegate = self;
     _imagePlayerView.scrollInterval = MAXFLOAT;
@@ -133,7 +133,7 @@
         [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
         [imageView addSubview:btn];
         
-        btn.center=CGPointMake(kScreenW*0.5, kScreenH-96);
+        btn.center=CGPointMake(SCREEN_WIDTH*0.5, SCREEN_HEIGHT-96);
         btn.bounds=CGRectMake(0, 0, 100,100);
         
     }
