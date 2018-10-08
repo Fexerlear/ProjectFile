@@ -33,6 +33,7 @@
     UIWindow *window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
     self.window = window;
+    [self loadUMPara];
     
     
     if ([YLFunction canShowNewFeature]) {
