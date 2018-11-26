@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5C3A3CD3DE203B51EED78A039101E968"
+               BlueprintIdentifier = "356F1389E1BDBA4A6A2D6437D34EE644"
                BuildableName = "MWPhotoBrowser.bundle"
                BlueprintName = "MWPhotoBrowser-MWPhotoBrowser"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5C3A3CD3DE203B51EED78A039101E968"
+            BlueprintIdentifier = "356F1389E1BDBA4A6A2D6437D34EE644"
             BuildableName = "MWPhotoBrowser.bundle"
             BlueprintName = "MWPhotoBrowser-MWPhotoBrowser"
             ReferencedContainer = "container:Pods.xcodeproj">

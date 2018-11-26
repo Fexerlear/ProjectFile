@@ -1,4 +1,4 @@
-platform :ios, '8.0'  # 指定平台与版本
+platform :ios, '10.0'  # 指定平台与版本
 inhibit_all_warnings!  # 全局禁止显示警告
 
 target 'ProjectFile' do # Pods for ProjectFile

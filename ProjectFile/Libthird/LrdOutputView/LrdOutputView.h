@@ -19,7 +19,7 @@
 
 @end
 
-typedef void(^dismissWithOperation)();
+typedef void(^dismissWithOperation)(void);
 
 typedef NS_ENUM(NSUInteger, LrdOutputViewDirection) {
     kLrdOutputViewDirectionLeft = 1,

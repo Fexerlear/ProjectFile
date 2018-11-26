@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import "CALayer+Transition.h"
 #import "YLAdvViewController.h"
-#import <UMMobClick/MobClick.h>
+#import <UMCommon/UMCommon.h>
 #import "FDSDImageTools.h"
 
 @interface AppDelegate ()
@@ -63,14 +63,11 @@
 }
 
 - (void)loadUMPara {
-    
-    UMConfigInstance.appKey = UM_AppKey;
-    UMConfigInstance.channelId = UM_channelId;
-    [MobClick startWithConfigure:UMConfigInstance];
-    [MobClick setEncryptEnabled:YES]; // 将日志信息做加密处理
+    [UMConfigure initWithAppkey:UM_AppKey channel:UM_channelId];
+    [UMConfigure setEncryptEnabled:YES]; // 将日志信息做加密处理
     
 #ifdef DEBUG
-    [MobClick setCrashReportEnabled:YES];
+    [UMConfigure setLogEnabled:YES];
 #endif
     
     

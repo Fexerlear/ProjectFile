@@ -53,7 +53,7 @@
  *  @param completeBlock 成功回调
  *  @param completeBlock 出错回调
  */
--(void)savedPhotosAlbum:(void(^)())completeBlock failBlock:(void(^)())failBlock;
+-(void)savedPhotosAlbum:(void(^)(void))completeBlock failBlock:(void(^)(void))failBlock;
 
 
 

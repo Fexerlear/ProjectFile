@@ -12,6 +12,6 @@
 /*
  *  初始化
  */
-+(instancetype)newFeatureVCWithEnterBlock:(void(^)())enterBlock;
++(instancetype)newFeatureVCWithEnterBlock:(void(^)(void))enterBlock;
 
 @end

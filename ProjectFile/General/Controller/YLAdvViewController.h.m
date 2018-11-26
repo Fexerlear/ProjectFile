@@ -26,7 +26,7 @@
 @property (nonatomic,strong) ImagePlayerView *imagePlayerView;
 
 
-@property (nonatomic,copy) void(^enterBlock)();
+@property (nonatomic,copy) void(^enterBlock)(void);
 
 @end
 
@@ -35,7 +35,7 @@
 /*
  *  初始化
  */
-+ (instancetype)newFeatureVCWithEnterBlock:(void (^)())enterBlock {
++ (instancetype)newFeatureVCWithEnterBlock:(void (^)(void))enterBlock {
   
     YLAdvViewController *newFeatureVC = [[YLAdvViewController alloc] init];
     newFeatureVC.imageURLs = [NSMutableArray array];

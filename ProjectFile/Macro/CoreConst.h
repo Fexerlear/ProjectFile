@@ -43,16 +43,6 @@
 //#define YL_Nav_Animation 1
 
 /**
- *  活动页面是否显示错误提示信息
- */
-//#define YL_Activity_Fail_Macro 1
-
-/**
- *  跳过白名单的校验
- */
-//#define JumpWhitePhoneList 1
-
-/**
  *  展示新版本特性
  */
 //#define NewVersionInfoMacro 1
@@ -74,11 +64,6 @@
 //#define YL_SecurityPolicy 1
 
 /**
- *  采用cookie方式验证应用
- */
-//#define YL_SetCookieService_Macro 1
-
-/**
  *  检测应用更新
  */
 //#define YL_APPUpdate_Plan 1
@@ -88,37 +73,6 @@
  */
 #define YL_LogInfo_Macro 1
 
-/**
- *  重新刷新首页的图片
- */
-#define YL_RefreshImageData 1
-
-/**
- *  开放MyAccount 和 passinternet 功能
- */
-#define YL_OPEN_MyAccount_Passinternet 1
-
-
-/**
- *  开放轮播推荐活动功能
- */
-#define YL_Home_Activity_FUN 1
-
-
-/**
- *  动态功能开关（首页功能）
- */
-#define YL_Home_ServiceOpen 1
-
-/**
- *  开启GIDF功能来获取号码
- */
-#define YL_GIDF_Service 1
-
-/**
- *  WiFi不能使用
- */
-//#define YL_WIFI_NETWORK_CANNOT_USE 1
 
 
 //---------------------------------开放相关功能专用-----------------------end
